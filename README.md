@@ -10,7 +10,7 @@ Created Using HTML5, CSS3 and JavaScript.
 ![tesla](https://github.com/deepakpcode/tesla_clone/assets/133647187/adf24863-a27f-46cc-9015-08bc3ffe6415)
 
 # Features
-+ Scroll through pictures smoothly with animation.
++ Scroll through pictures smoothly with animation. (AOS library for animation)
 
 + Open/Close the menu.
 
