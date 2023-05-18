@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="drive.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/images/tesla-logo.png" alt="">
+        </div>
+        <nav class="center desktop">
+            <a href="#ModelS">Model S</a>
+            <a href="#Model3">Model 3</a>
+            <a href="#Modely">Model Y</a>
+            <a href="#ModelX">Model X</a>
+            <a href="#Panels">Solar Panels</a>
+            <a href="#Roof">Solar Roof</a>
+
+        </nav>
+        <nav class="right ">
+            <a href="" class="desktop">Shop</a>
+            <a href="" class="desktop">Account</a>
+            <a href="" id="menu-btn">Menu</a>
+        </nav>
+    </header>
+    <div class="back-blur"></div>
+    <aside id="aside">
+        <button class="close"><i class="bi bi-x"></i></button>
+
+        <a href="">Existing Inventory</a>
+        <a href="">Used Inventory</a>
+        <a href="">Trade-In</a>
+        <a href="">Demo Drive</a>
+        <a href="">Insurance</a>
+        <a href="">Commercial Energy</a>
+        <a href="">Utilities</a>
+        <a href="">Charging</a>
+        <a href="">Find Us</a>
+        <a href="">Support</a>
+        <a href="">Investor Relations</a>
+        <a href="">Shop</a>
+        <a href="">Account</a>
+        <a href="">More</a>
+    </aside>
+    <section class="drive-box">
+        <div class="drive-text">
+            <h1>Schedule a Demo Drive</h1>
+            <p>Demo Drive a Tesla at a store near you. Drivers must have a valid U.S. driver's license and be 18 years
+                of age or older.</p>
+        </div>
+        <div class="car-content">
+            <div class="demo-btn">
+                <div class="demo-car-btn ms">Model S</div>
+                <div class="demo-car-btn m3">Model 3</div>
+                <div class="demo-car-btn mx">Model X</div>
+                <div class="demo-car-btn my">Model Y</div>
+
+            </div>
+            <div class="car-img" id="carImg">
+
+
+            </div>
+        </div>
+
+
+
+        <footer>
+            <a href="">Tesla © 2023</a>
+            <a href="">Privacy & Legal</a>
+            <a href="">Vehicle Recalls</a>
+            <a href="" class="hide">Contact</a>
+            <a href="">Careers</a>
+            <a href="">News</a>
+            <a href="" class="hide">Engage</a>
+            <a href="" class="hide">Locations</a>
+            
+        </footer>
+    </section>
+  
+
+
+    <script>
+        const modelS = document.querySelector('.ms');
+        const model3 = document.querySelector('.m3');
+        const modelX = document.querySelector('.mx');
+        const modelY = document.querySelector('.my');
+        const carImg = document.getElementById('carImg')
+
+        model3.onclick = () => {
+            carImg.style.backgroundImage = "url('/images/model3.jpg')"
+        }
+        modelX.onclick = () => {
+            carImg.style.backgroundImage = "url('/images/modelx.jpg')"
+        }
+        modelY.onclick = () => {
+            carImg.style.backgroundImage = "url('/images/modely.jpg')"
+        }
+        modelS.onclick = () => {
+            carImg.style.backgroundImage = "url('/images/models.jpg')"
+        }
+
+    </script>
+    <script src="tesla.js"></script>
+</body>
+
+</html>

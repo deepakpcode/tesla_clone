@@ -1,0 +1,126 @@
+
+/* Drive Main Content */
+
+ .drive-box {
+    height: 100vh;
+    background:white;
+    margin-top: 10rem;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.drive-text h1 {
+    font-size: 38px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    letter-spacing: 1.7px;
+}
+
+.drive-text p {
+    font-size: 14px;
+    color: inherit;
+}
+
+.car-content {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+    gap: 50px;
+    
+}
+
+.demo-btn {
+    display: flex;
+    flex-direction: column;
+    width: 13rem;
+}
+
+.demo-btn .demo-car-btn {
+    font-size: 15px;
+    font-weight: 600;
+    color: #7f8081;
+    background: white;
+    margin-bottom: 17px;
+    padding: 15px 70px 15px 70px;
+    border-radius: 5px;
+    border: 1px solid rgb(100, 99, 99);
+    cursor: pointer;
+    width: 100%;
+    display:block;
+}
+.demo-btn .demo-car-btn:focus{
+    border: 3px solid rgb(72, 72, 223);
+}
+.car-img{
+    
+    width: 550px;
+    height: 250px;
+    background: url(/images/models.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    transition: all .4s ease;
+}
+@media(max-width:760px){
+    .car-content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+    .demo-btn{
+       flex-direction: row;
+        justify-content: center;
+    }
+    .demo-btn .demo-car-btn{
+       font-size: .8rem;
+       padding: 1rem 2.5rem;
+       white-space: nowrap;
+    }
+    .drive-box {
+        padding: 5rem 5rem;
+    }
+    .drive-box {
+        margin-top: 4rem;
+    }
+    footer{
+        padding-top: 4rem;
+    }
+}
+@media(max-width:414px){
+    .demo-btn{
+        flex-direction: column;
+         justify-content: center;
+     }
+     .demo-btn .demo-car-btn{
+        text-align: center;
+        white-space: nowrap;
+     }
+     .drive-text h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .drive-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .car-content {
+        gap: 30px;
+    }
+    .car-img{
+        width: 370px;
+    }
+    .drive-box {
+       padding: 2rem 0 !important;
+    }
+    footer{
+        padding-top: 3rem;
+    }
+}
+@media(max-width:360px){
+    .car-img{
+        width: 330px;
+    }
+}
